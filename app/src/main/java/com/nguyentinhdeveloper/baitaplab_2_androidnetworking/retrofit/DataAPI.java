@@ -9,11 +9,13 @@ import retrofit2.http.POST;
 public interface DataAPI {
 
 
-
+   //Đăng nhập
     @FormUrlEncoded
     @POST("/android/login.php")
     Call<String> login(@Field("username")String email, @Field("password")String password);
 
+
+    // Get all dữ liệu
     @GET("/android/bai1.php?food=today")
     Call<String> getData();
 
