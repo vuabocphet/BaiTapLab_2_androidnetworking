@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+   <ImageView
+       android:layout_marginTop="50dp"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:src="@drawable/icon"
+       />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/EditScreenTextInputLayoutStyle"
+
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        >
+        <EditText
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:backgroundTint="#9B59B6"
+            android:maxLength="6"
+            android:text="admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/EditScreenTextInputLayoutStyle"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        >
+        <EditText
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:text="123456"
+            android:backgroundTint="#9B59B6"
+            android:maxLength="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pass"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/EditScreenTextInputLayoutStyle"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        >
+        <EditText
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:backgroundTint="#9B59B6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_a"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/bt"
+        android:background="@drawable/custom_buttom"
+        android:text="LOGIN"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
